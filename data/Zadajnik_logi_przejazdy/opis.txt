@@ -1,0 +1,24 @@
+- do 2024_06_24 (włącznie) puste pomiary
+- 2024_07_03 różne wartości dla każdej osi, klasa pojazdu 4 ~ prawdopodobnie pierwszy stworzony sygnał
+- 2024_07_09 początkowo tak jak w 2024_07_03, w trakcie jednak zmiana ~ prawdopodobnie na sygnał prostokątny, klasa pojazdu 6
+- 2024_11_14 tak jak w drugiej części 2024_07_09
+- 2024_11_14 sygnał prostokątny dla pojazdu 2-osiowego, klasa pojazdu 2
+
+klasy TLS(5+1) ~ prawdopodobnie stosowana w tym przypadku
+1. Samochody osobowe 
+2. Małe pojazdy dostawcze 
+3. Pojazdy ciężarowe (HGV)
+4. Ciężarówki z przyczepą 
+5. Autobusy 
+6. Niesklasyfikowane pojazdy
+
+klasy TLS(8+1)
+1. Inne pojazdy (pojazdy niesklasyfikowane)
+2. Motocykl
+3. Samochód osobowy
+4. Dostawczy (małe pojazdy użytkowe)
+5. Samochód osobowy z przyczepą
+6. Ciężarowy (HGV)
+7. Ciężarowy z przyczepą
+8. Ciężarowy z naczepą (artykulowany)
+9. Autobus

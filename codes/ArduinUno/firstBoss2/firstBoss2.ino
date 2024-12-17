@@ -6,9 +6,9 @@ Adafruit_MCP4728 mcp;
 const int speedReference = 50;
 const int speedChoosen = 50;
 const int delayChannel = 2; //delay between channels given as a number of Samples
-int delaySample1 = 421; //delay between Samples in microseconds
-int delaySample2 = 400; //delay between Samples in microseconds
-int buffer[delayChannel]; // Buffer for the second DAC
+int delaySampleIdeal = 1200;
+int delaySample1 = delaySampleIdeal - 779; //delay between Samples in microseconds
+int delaySample2 = delaySampleIdeal - 800; //delay between Samples in microseconds
 int DelayPeak[] = {206000,325000,47000,47000,0}; //delay between fluctations
 int Samples1[] = {415,472,547,660,749,884,1008,1160,1262,1358,1435,1461,1493,1518,1533,1549,1557,1558,1565,1555,1526,1466,1343,1217,1098,962,833,695,589,512,474,417,380};
 int Samples2[] = {412,486,624,764,944,1164,1409,1573,1719,1805,1879,1906,1927,1926,1952,1956,2004,2043,2064,2088,2056,1946,1800,1603,1394,1135,925,758,642,514,445,407,380};
@@ -23,7 +23,7 @@ int delayRelay2 = 100000;
 
 
 void adjustSpeed(int* DelayPeak, int arraySize) {
-  int adjustment = delayChannel * 1200; // 1.2 milliseconds in microseconds
+  int adjustment = delayChannel * 1200;
   for (int i = 0; i < arraySize-1; i++) {
     DelayPeak[i] -= adjustment;
   }

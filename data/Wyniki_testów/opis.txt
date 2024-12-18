@@ -1,8 +1,8 @@
 - do 2024_06_24 (włącznie) puste pomiary
-- 2024_07_03 różne wartości dla każdej osi, klasa pojazdu 4 ~ prawdopodobnie pierwszy stworzony sygnał
-- 2024_07_09 początkowo tak jak w 2024_07_03, w trakcie jednak zmiana ~ prawdopodobnie na sygnał prostokątny, klasa pojazdu 6
-- 2024_11_14 tak jak w drugiej części 2024_07_09
-- 2024_11_14 sygnał prostokątny dla pojazdu 2-osiowego, klasa pojazdu 2
+- 2024_07_03 różne wartości dla każdej osi, klasa pojazdu 4 ~ prawdopodobnie pierwszy stworzony sygnał, zasilanie komputer
+- 2024_07_09 początkowo tak jak w 2024_07_03, w trakcie jednak zmiana ~ prawdopodobnie sygnał prostokątny, zasilanie komputer, klasa pojazdu 6
+- 2024_11_14 jak w drugiej części 2024_07_09 jednak z mniejszymi błędami, zasilanie powerbank
+- 2024_11_14 sygnał prostokątny dla pojazdu 2-osiowego, klasa pojazdu 2, zasilanie powerbank
 
 klasy TLS(5+1) ~ prawdopodobnie stosowana w tym przypadku
 1. Samochody osobowe 

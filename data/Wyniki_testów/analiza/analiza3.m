@@ -1,0 +1,58 @@
+% Program do generowania histogramów i analizy statystycznej
+% Wczytanie danych z pliku CSV
+data = readtable('2024_07_09-old-1-analiza.csv', 'Delimiter', ';');
+
+% Ekstrakcja masy całkowitej i nacisków osi
+weight_total = data{:, 1}; % Masa całkowita
+num_axes = 5; % Liczba osi
+
+% Sumowanie nacisków lewej i prawej strony dla każdej osi
+axes_pressures = zeros(height(data), num_axes);
+for i = 1:num_axes
+    axes_pressures(:, i) = data{:, 2*i} + data{:, 2*i + 1};
+end
+
+% Analiza masy całkowitej
+analyze_data(weight_total, 'zarejestrowanej masy całkowitej');
+
+% Analiza każdej osi
+for i = 1:num_axes
+    analyze_data(axes_pressures(:, i), ['zarejestrowanego nacisku osi ', num2str(i)]);
+end
+
+function analyze_data(data, label_text)
+    % Obliczenia statystyczne
+    mean_value = mean(data);
+    std_dev = std(data);
+    variance = var(data);
+    median_value = median(data);
+    mode_value = mode(data); % Moda
+    range_value = max(data) - min(data);
+    error_stat = std_dev / sqrt(length(data)); % Błąd statystyczny średniej
+    relative_error = (std_dev / mean_value) * 100; % Błąd względny
+    
+    % Wyświetlanie statystyk w konsoli
+    fprintf('%s:\n', label_text);
+    fprintf('Mediana = %.2f\nOdchylenie std = %.2f\nModa = %.2f\n', median_value, std_dev, mode_value);
+    fprintf('Rozstęp = %.2f\nBłąd względny = %.2f%%\n\n', range_value, relative_error);
+    
+    % Tworzenie histogramu
+    figure('Name', ['Histogram ', label_text], 'NumberTitle', 'off');
+    
+    % Ustalanie szerokości binów
+    num_bins = 300; % Duża liczba binów dla szczegółowego histogramu
+    bin_edges = linspace(min(data), max(data), num_bins + 1); % Równe odstępy
+
+    h = histogram(data, 'BinEdges', bin_edges, ...
+        'EdgeColor', 'none', 'FaceColor', [0, 0.5, 1]); % Bez krawędzi dla płynniejszego wyglądu
+
+    % Ustawienia tytułu i etykiet osi
+    title(['Histogram ', label_text]);
+    xlabel('Wartość [kg]');
+    ylabel('Ilość odczytów');
+    grid on;
+
+    % Pobranie wartości ymax i ustawienie ylim
+    ymax = max(h.Values); % Pobranie maksymalnej wartości z histogramu
+    ylim([0, ymax + 0.2]); % Ustawienie zakresu osi y
+end

@@ -7,8 +7,13 @@
 >
 > Made public June 2026. READMEs, repository structure, and sketch renaming prepared with the help of [Claude](https://claude.ai) (Anthropic).
 
-Full thesis (LaTeX source + PDF): [WIM-Signal-Simulator-Thesis](https://github.com/jackobpunch/WIM-Signal-Simulator-Thesis)
-Desktop control panel app: [WIM-Signal-Simulator-App](https://github.com/jackobpunch/WIM-Signal-Simulator-App)
+## Project
+
+| Repo | Contents |
+|------|----------|
+| 📡 **WIM-Signal-Simulator** ← you are here | Hardware, firmware, real sensor data |
+| 📄 [WIM-Signal-Simulator-Thesis](https://github.com/jackobpunch/WIM-Signal-Simulator-Thesis) | Full thesis (PDF + LaTeX source) |
+| 🖥️ [WIM-Signal-Simulator-App](https://github.com/jackobpunch/WIM-Signal-Simulator-App) | Flutter desktop control panel |
 
 ---
 

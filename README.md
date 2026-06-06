@@ -1,10 +1,11 @@
 # Signal Simulator for WIM Systems
 
-Hardware and firmware for simulating the sensor signals of a Weigh-in-Motion (WIM) road installation, built as part of an engineering thesis at AGH University of Science and Technology.
-
-> **"Signal simulator from the dynamic vehicle weighing system"**
-> Jakub Cios, Faculty of Electrical Engineering, Automatics, Computer Science and Biomedical Engineering, 2025
-> Supervisor: dr hab. inż. Ryszard Sroka, prof. AGH
+> **About this repository**
+> Developed by **Jakub Cios** as part of his engineering thesis at AGH University of Science and Technology (defended January 2025), supervised by dr hab. inż. Ryszard Sroka, prof. AGH, with support from Mateusz Danioł.
+>
+> Part of the research project **"Preparation of metrological security for implementing WIM systems in direct mass enforcement mode (e-WIM)"**, conducted in cooperation between AGH and **GUM** (Główny Urząd Miar — Central Office of Measures) under the [Polska Metrologia](https://www.agh.edu.pl/aktualnosci/detail/projekty-z-programu-polska-metrologia-agh-i-gum-rozpoczynaja-wspolprace) programme funded by the Polish Ministry of Education and Science.
+>
+> Made public June 2026. READMEs, repository structure, and sketch renaming prepared with the help of [Claude](https://claude.ai) (Anthropic).
 
 Full thesis (LaTeX source + PDF): [WIM-Signal-Simulator-Thesis](https://github.com/jackobpunch/WIM-Signal-Simulator-Thesis)
 Desktop control panel app: [WIM-Signal-Simulator-App](https://github.com/jackobpunch/WIM-Signal-Simulator-App)
@@ -135,10 +136,3 @@ Install via Arduino Library Manager:
 
 Board package: `arduino:renesas_uno`
 
----
-
-## About this repository
-
-The hardware, firmware, and measurements in this repository were produced by Jakub Cios during his engineering thesis at AGH UST (defended January 2025). The repository was made public in June 2026 — over a year after the thesis defence, once the patent situation was resolved.
-
-The READMEs, repository structure, and sketch renaming were done with the help of [Claude](https://claude.ai) (Anthropic) to present the existing work clearly for a public audience.

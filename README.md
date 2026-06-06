@@ -6,8 +6,8 @@ Hardware and firmware for simulating the sensor signals of a Weigh-in-Motion (WI
 > Jakub Cios, Faculty of Electrical Engineering, Automatics, Computer Science and Biomedical Engineering, 2025
 > Supervisor: dr hab. inż. Ryszard Sroka, prof. AGH
 
-Full thesis (LaTeX source + PDF): [inzynierka](https://github.com/jackobpunch/inzynierka)
-Desktop control panel app: [zadajnik_desktop](https://github.com/MDaniolAGH/zadajnik_desktop)
+Full thesis (LaTeX source + PDF): [WIM-Signal-Simulator-Thesis](https://github.com/jackobpunch/WIM-Signal-Simulator-Thesis)
+Desktop control panel app: [WIM-Signal-Simulator-App](https://github.com/jackobpunch/WIM-Signal-Simulator-App)
 
 ---
 
@@ -90,7 +90,7 @@ Two custom inductors (72 µH each) are connected in series. One is periodically 
 
 ### Control
 
-The simulator is operated via the [zadajnik_desktop](https://github.com/MDaniolAGH/zadajnik_desktop) Flutter app, which detects the Arduino via `arduino-cli`, compiles the firmware, and uploads it over USB.
+The simulator is operated via the [WIM-Signal-Simulator-App](https://github.com/jackobpunch/WIM-Signal-Simulator-App) Flutter app, which detects the Arduino via `arduino-cli`, compiles the firmware, and uploads it over USB.
 
 ---
 

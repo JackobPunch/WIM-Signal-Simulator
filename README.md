@@ -36,7 +36,7 @@ This simulator reproduces both signal types electrically, so the weighing comput
 
 Build photos and videos are in the `gallery/` folder.
 
-![Simulator on lab bench](gallery/photo8.jpg)
+![Assembled simulator](gallery/final_device.png)
 
 ---
 
@@ -50,9 +50,9 @@ Build photos and videos are in the `gallery/` folder.
 
 ## Output signals
 
-The oscilloscope capture below shows the simulator generating a 5-axle semi-trailer pass across two pressure sensor channels, with the inductive loop detection signal on the lower trace.
+The plot below shows the simulator generating a 5-axle semi-trailer pass on two pressure sensor channels (blue and red), with the inter-channel delay visible between corresponding axle peaks.
 
-![Oscilloscope output — 5-axle semi-trailer](gallery/photo9.jpg)
+![Output signals — 5-axle semi-trailer, 2 channels](gallery/output_signals.jpg)
 
 ---
 

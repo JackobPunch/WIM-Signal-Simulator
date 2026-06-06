@@ -134,3 +134,11 @@ Install via Arduino Library Manager:
 - `Wire`
 
 Board package: `arduino:renesas_uno`
+
+---
+
+## About this repository
+
+The hardware, firmware, and measurements in this repository were produced by Jakub Cios during his engineering thesis at AGH UST (defended January 2025). The repository was made public in June 2026 — over a year after the thesis defence, once the patent situation was resolved.
+
+The READMEs, repository structure, and sketch renaming were done with the help of [Claude](https://claude.ai) (Anthropic) to present the existing work clearly for a public audience.

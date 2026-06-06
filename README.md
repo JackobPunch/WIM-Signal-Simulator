@@ -50,9 +50,9 @@ Build photos and videos are in the `gallery/` folder.
 
 ## Output signals
 
-The plot below shows the simulator generating a 5-axle semi-trailer pass on two pressure sensor channels (blue and red), with the inter-channel delay visible between corresponding axle peaks.
+The plot below shows the simulator generating a 5-axle semi-trailer pass on the four DAC output channels.
 
-![Output signals — 5-axle semi-trailer, 2 channels](gallery/output_signals.jpg)
+![Output signals — 5-axle semi-trailer, 4 channels](gallery/output_signals.jpg)
 
 ---
 

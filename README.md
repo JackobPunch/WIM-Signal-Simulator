@@ -35,6 +35,24 @@ This simulator reproduces both signal types electrically, so the weighing comput
 
 Build photos and videos are in the `gallery/` folder.
 
+![Simulator on lab bench](gallery/photo8.jpg)
+
+---
+
+## System architecture
+
+![Architecture diagram](gallery/architecture.jpg)
+
+*Microcontroller → DAC → Voltage dividers → Pressure sensor output terminals. Microcontroller → Relay module → Inductive loop output terminals.*
+
+---
+
+## Output signals
+
+The oscilloscope capture below shows the simulator generating a 5-axle semi-trailer pass across two pressure sensor channels, with the inductive loop detection signal on the lower trace.
+
+![Oscilloscope output — 5-axle semi-trailer](gallery/photo9.jpg)
+
 ---
 
 ## Repository structure
